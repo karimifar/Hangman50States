@@ -153,3 +153,15 @@ h3{
 #lost-count{
     color: #FC7753;
 }
+
+@media screen and (max-width: 800px) {
+
+    .col1 , .right-col{
+        width: 100%;
+    }
+    #wrap-game{
+        width: 96%;
+        margin: 1% 2%;
+    }
+
+}
