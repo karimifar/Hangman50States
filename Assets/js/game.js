@@ -168,6 +168,7 @@ function printUsedLetters(){
 function chechWin(){ 
     if (blankWord.indexOf("-") == -1){
     resetGuessed();
+    $("#guessed-letters").text(guessedLetters);
     winCount++;
     tries=0;
     newWord=true;
@@ -176,6 +177,7 @@ function chechWin(){
     burnWord();
 }else if (tries==0){
     resetGuessed();
+    $("#guessed-letters").text(guessedLetters);
     lostCount++;
     newWord=true;
     stateAnimFalse();
@@ -222,12 +224,12 @@ function clearStart(){
 function stateAnimCorrect(){
     svgElem= $("#" + targetID)
     var stateAnim = new TimelineMax ();
-    stateAnim.fromTo(svgElem, 1, {x: -200, scale: 2, transformOrigin: "50% 50%"}, {x: 0 ,scale: 1, transformOrigin: "50% 50%", fill: 'green'})
+    stateAnim.fromTo(svgElem, 2, {y:200, rotation: "180" , scale: 2, transformOrigin: "50% 50%", ease:Elastic.easeOut}, {y:0, x: 0 , rotation: "0", scale: 1, transformOrigin: "50% 50%", fill: 'green', ease:Elastic.easeOut})
 }
 function stateAnimFalse(){
     svgElem= $("#" + targetID)
     var stateAnim = new TimelineMax ();
-    stateAnim.fromTo(svgElem, 1, {x:-200, scale: 2, transformOrigin: "50% 50%"}, {x:0, scale: 1, transformOrigin: "50% 50%", fill: 'red'})
+    stateAnim.fromTo(svgElem, 2, {x:-200, rotation: "180",scale: 2, transformOrigin: "50% 50%", ease:Bounce.easeOut}, {rotation: "0", x:0, scale: 1, transformOrigin: "50% 50%", fill: 'red', ease:Bounce.easeOut})
 
 }
 

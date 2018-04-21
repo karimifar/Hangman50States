@@ -96,6 +96,7 @@
     padding: 30px;
     background: white;
     border-radius: 10px;
+    overflow-wrap: break-word;
 
 }
 h3{
