@@ -2,11 +2,16 @@
     box-sizing: border-box;
   }
   body{
-    background: #eee;
+    background: #EDEDEF;
   }
 .st0{
     fill:#fff;
     opacity: 0.8;
+}
+
+#guess{
+    color: #FC7753;
+    color: #124e78;
 }
 /* #TX{
     fill: gold;
@@ -49,6 +54,13 @@
 }
 .col3 h3{
     margin-bottom: 20px;
+    color: #124e78;
+}
+
+h4{
+    color: #124e78;
+    font-family: 'Rubik', sans-serif;
+
 }
 #burnt-list{
     display: flex;
@@ -61,6 +73,8 @@
 
 }
 .burnt-list{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
     margin: 5px;
     width: 100px;
     display: inline-block;
@@ -73,7 +87,7 @@
 
 
 .red{
-    fill: red;
+    fill: #FC7753;
 }
 .outline{
     fill: #124e78;
@@ -82,16 +96,16 @@
 }
 
 .correct-guess{
-    color: green;
+    color: #0AAF1B;
 }
 .false-guess{
-    color: red;
+    color: #FC7753;
 }
 #word-holder{
     font-family: 'Anton', sans-serif;
     font-size: 50px;
     letter-spacing: 0.2em;
-    color: green;
+    color: #0AAF1B;
     margin: 0 ;
     padding: 30px;
     background: white;
@@ -112,7 +126,7 @@ h3{
     margin: 40px 30px 10px;
 }
 #start-text{
-    color: red;
+    color: #FC7753;
 }
 .stats{
     font-size: 24px;
@@ -123,7 +137,7 @@ h3{
 
 
 #guessed-letters{
-    color: red;
+    color: #FC7753;
 }
 .stat-col{
     padding-top: 30px;
@@ -134,8 +148,8 @@ h3{
     margin-top: 30px;
 }
 #win-count{
-    color: green;
+    color: #0AAF1B;
 }
 #lost-count{
-    color: red;
+    color: #FC7753;
 }
